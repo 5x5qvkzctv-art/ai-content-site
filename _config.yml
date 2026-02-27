@@ -1,1 +1,35 @@
-yaml # Site settings title: "AI Tools Daily" description: "Your daily source for AI productivity tools, automation strategies, and passive income ideas" baseurl: "" url: "https://5x5qvkzctv-art.github.io" author: "AI Tools Daily Team" email: "contact@aitoolsdaily.com" # Build settings markdown: kramdown permalink: /:title/ plugins: - jekyll-feed - jekyll-sitemap - jekyll-seo-tag # SEO keywords: "AI tools, productivity automation, passive income, ChatGPT alternatives, automation tools" # Monetization affiliate_amazon: "aitoolsdail08-20" yaml google_adsense: "ca-pub-6711211100719251" # Social instagram: aitoolsdaily pinterest: aitoolsdaily # Collections posts_per_page: 10 # Theme show_excerpts: true # Analytics google_analytics: "YOUR-GA-ID"
+# Site settings
+title: "AI Tools Daily"
+description: "Your daily source for AI productivity tools, automation strategies, and passive income ideas"
+baseurl: ""
+url: "https://5x5qvkzctv-art.github.io"
+author: "AI Tools Daily Team"
+email: "contact@aitoolsdaily.com"
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+keywords: "AI tools, productivity automation, passive income, ChatGPT alternatives, automation tools"
+
+# Monetization
+affiliate_amazon: "aitoolsdail08-20"
+google_adsense: "ca-pub-6711211100719251"
+
+# Social
+instagram: aitoolsdaily
+pinterest: aitoolsdaily
+
+# Collections
+posts_per_page: 10
+
+# Theme
+show_excerpts: true
+
+# Analytics
+google_analytics: "YOUR-GA-ID"
