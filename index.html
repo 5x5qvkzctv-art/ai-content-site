@@ -1,0 +1,52 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero">
+  <h1>Discover AI Tools That Actually Work</h1>
+  <p>We test and review the best AI productivity tools, automation strategies, and passive income opportunities so you don't have to.</p>
+  <a href="#latest" class="cta-button">Start Exploring</a>
+</div>
+
+<h2 id="latest">Latest Articles</h2>
+<div class="post-grid">
+  {% for post in site.posts limit:6 %}
+  <article class="post-card">
+    <a href="{{ post.url | relative_url }}">
+      <h3>{{ post.title }}</h3>
+      <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      <span class="read-more">Read More →</span>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
+<h2>Popular Categories</h2>
+<div class="categories">
+  <a href="#" class="category-card">
+    <h3>🤖 AI Writing Tools</h3>
+    <p>Best alternatives to ChatGPT for content creation</p>
+  </a>
+  <a href="#" class="category-card">
+    <h3>⚡ Automation</h3>
+    <p>Workflow automation that saves hours every week</p>
+  </a>
+  <a href="#" class="category-card">
+    <h3>💰 Passive Income</h3>
+    <p>Real strategies that work in 2025</p>
+  </a>
+</div>
+
+<div class="newsletter">
+  <h2>Get AI Tools Delivered Weekly</h2>
+  <p>No spam. Just the best AI tools and automation tips.</p>
+  <form action="https://YOUR-EMAIL-PROVIDER.com/subscribe" method="post">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<div class="disclosure">
+  <small><strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through links on this site. This helps keep our content free.</small>
+</div>

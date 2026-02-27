@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.author %}<span class="author">by {{ page.author }}</span>{% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.affiliate Disclaimer %}
+  <div class="affiliate-disclaimer">
+    <p><em>This article contains affiliate links. We may earn a commission if you make a purchase through our links, at no extra cost to you.</em></p>
+  </div>
+  {% endif %}
+
+  <div class="related-products">
+    <h3>Recommended Products</h3>
+    <!-- Amazon Native Shopping Ads will go here -->
+    <div id="amzn-assoc-ad-{{ site.affiliate_amazon }}"></div>
+    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId={{ site.affiliate_amazon }}"></script>
+  </div>
+
+  <div class="post-footer">
+    <h3>Enjoyed this article?</h3>
+    <p>Subscribe to our weekly newsletter for the best AI tools and automation strategies.</p>
+    <a href="#" class="cta-button">Subscribe Now</a>
+  </div>
+</article>
+
+<div class="related-posts">
+  <h3>More Articles You'll Like</h3>
+  <div class="post-grid">
+    {% for post in site.related_posts limit:3 %}
+    <article class="post-card">
+      <a href="{{ post.url | relative_url }}">
+        <h4>{{ post.title }}</h4>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</div>
